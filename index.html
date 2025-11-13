@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inflation Calculator: Purchasing Power Tool</title>
+    <meta name="description" content="Calculate the changing value of money over time with our intuitive Inflation Calculator. See how purchasing power is affected by historical inflation using simulated CPI data. A modern financial tool for planning and analysis."/>
+    <meta name="keywords" content="inflation calculator, purchasing power, cpi, consumer price index, value of money, historical inflation, financial tool, investment calculator" />
+    <meta name="author" content="HSINI MOHAMED" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:title" content="Inflation Calculator: Purchasing Power Tool">
+    <meta property="og:description" content="Discover the true value of money over time. Instantly calculate historical purchasing power and understand the impact of inflation.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://example.com/">
+    <meta property="twitter:title" content="Inflation Calculator: Purchasing Power Tool">
+    <meta property="twitter:description" content="Discover the true value of money over time. Instantly calculate historical purchasing power and understand the impact of inflation.">
+    <meta property="twitter:image" content="https://example.com/og-image.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Animated Galaxy Background */
+      @keyframes move-twink-back {
+        from {background-position:0 0;}
+        to {background-position:-10000px 5000px;}
+      }
+      @keyframes move-clouds-back {
+        from {background-position:0 0;}
+        to {background-position:10000px 0;}
+      }
+      .stars, .twinkling, .clouds {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        width:100%;
+        height:100%;
+        display:block;
+      }
+      .stars {
+        background:#000 url(https://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+        z-index:0;
+      }
+      .twinkling{
+        background:transparent url(https://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+        z-index:1;
+        animation:move-twink-back 200s linear infinite;
+      }
+      .clouds{
+        background:transparent url(https://www.script-tutorials.com/demos/360/images/clouds.png) repeat top center;
+        z-index:2;
+        animation:move-clouds-back 250s linear infinite;
+        opacity: 0.4;
+      }
+      /* Animation for hero text */
+      @keyframes fade-in-down {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fade-in-up {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in-down {
+        animation: fade-in-down 0.8s ease-out forwards;
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.8s ease-out 0.3s forwards;
+        opacity: 0; /* Start hidden */
+      }
+      .animate-fade-in {
+        animation: fade-in-up 1s ease-out forwards;
+        opacity: 0;
+      }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Inflation Calculator: Purchasing Power Tool",
+      "url": "https://example.com/",
+      "description": "A modern web application to calculate the historical purchasing power of money, demonstrating the effects of inflation over time using simulated CPI data.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://example.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
